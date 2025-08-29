@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fit Chase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Website Icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="image/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="image/favicon-64x64.png">
+    <link rel="shortcut icon" href="image/favicon-32x32.png" type="image/png">
+</head>
+
+<body class="bg-gradient-to-b from-white to-gray-50 text-gray-900">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl"><img src="image/logo.png" alt="logo" class="h-10"></span>
+                <span class="font-bold text-xl">Fit Chase</span>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex flex-1 justify-center space-x-8 font-medium">
+                <a href="#features" class="hover:text-indigo-600">Home</a>
+                <!-- <a href="#blog" class="hover:text-indigo-600">Blog</a> -->
+                <a href="#api" class="hover:text-indigo-600">API (coming soon)</a>
+                <!-- <a href="#contact" class="hover:text-indigo-600">Contact</a> -->
+            </nav>
+
+            <!-- App Buttons -->
+            <div class="hidden md:flex space-x-3">
+                <!-- App Store -->
+                <a href="https://apps.apple.com/app/fitchase-gym-home-workouts/id6749707513" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="image/appstore.png" alt="App Store" class="h-12">
+                </a>
+
+                <!-- Google Play -->
+                <!-- <a href="#"><img src="image/googleplay.png" alt="Google Play" class="h-12"></a> -->
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden flex items-center focus:outline-none">
+                <svg class="w-7 h-7 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-md border-t">
+            <div class="flex flex-col items-center py-6 space-y-6">
+                <a href="#features" class="hover:text-indigo-600">Home</a>
+                <!-- <a href="#blog" class="hover:text-indigo-600">Blog</a> -->
+                <a href="#api" class="hover:text-indigo-600">API (coming soon)</a>
+                <!-- <a href="#contact" class="hover:text-indigo-600">Contact</a> -->
+                <div class="flex space-x-3 pt-4">
+                    <a href="https://apps.apple.com/app/fitchase-gym-home-workouts/id6749707513" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="image/appstore.png" alt="App Store" class="h-12">
+                    </a>
+
+                    <!-- <a href="#"><img src="image/googleplay.png" alt="Google Play" class="h-12"></a> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="px-4 grid md:grid-cols-2 items-center">
+        <!-- Left Side (Text) -->
+        <section class="max-w-md mx-auto py-8">
+            <div>
+                <!-- Users -->
+                <div class="flex items-center space-x-2 mb-4 border rounded-full px-2 py-1 w-fit border-black-200">
+                    <div class="flex -space-x-2">
+                        <img src="image/used-by-1.png" class="h-8 w-8 rounded-full border-2 border-white" alt="user1">
+                        <img src="image/used-by-2.png" class="h-8 w-8 rounded-full border-2 border-white" alt="user2">
+                        <img src="image/used-by-3.png" class="h-8 w-8 rounded-full border-2 border-white" alt="user3">
+                    </div>
+                    <p class="text-xs text-black">Loved by users with ⭐ 4.9 rating</p>
+                </div>
+
+                <!-- Headings -->
+                <h1 class="text-5xl md:text-4xl lg:text-5xl font-bold mb-4">Meet FitChase</h1>
+                <p class="mr-22 text-5xl md:text-3xl lg:text-4xl font-medium text-gray-700 mb-6">
+                    Train smarter with gym or home workouts
+                </p>
+                <p class="text-lg md:text-base text-gray-600 mb-6">
+                    Train smarter with 1300+ workouts, custom plans, and categories for both men and women.
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex space-x-3">
+                    <a href="https://apps.apple.com/app/fitchase-gym-home-workouts/id6749707513" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="image/appstore.png" alt="App Store" class="h-12">
+                    </a>
+
+                    <!-- <a href="#"><img src="image/googleplay.png" alt="Google Play" class="h-12"></a> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Side (Image) -->
+        <section class="flex justify-center">
+            <img src="image/hero.webp">
+        </section>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="max-w-7xl mx-auto px-6 mt-16">
+        <div class="mx-auto text-center mb-12">
+            <h2 class="text-3xl md:text-5xl">What does Fit Chase include?</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div class="flex justify-center">
+                <img id="feature-image" src="image/home.webp" alt="Feature Preview" class="rounded-xl w-72 md:w-96">
+            </div>
+
+            <div class="space-y-4">
+                <div class="feature-card p-5 border rounded-xl bg-white cursor-pointer hover:border-indigo-500 transition"
+                    data-img="image/home.webp">
+                    <h3 class="font-semibold text-lg mb-2">Transform Your Body With Home Workouts</h3>
+                    <p class="text-gray-600 text-sm">Follow guided workout routines, built for your goals, with no
+                        equipment effective training at home.</p>
+                </div>
+                <div class="feature-card p-5 border rounded-xl bg-white cursor-pointer hover:border-indigo-500 transition"
+                    data-img="image/gym.webp">
+                    <h3 class="font-semibold text-lg mb-2">Train Smarter at the Gym</h3>
+                    <p class="text-gray-600 text-sm">Follow expert-designed workout plans with 1300+ exercises tailored
+                        to your fitness goals and push your limits every session.</p>
+                </div>
+                <div class="feature-card p-5 border rounded-xl bg-white cursor-pointer hover:border-indigo-500 transition"
+                    data-img="image/level.webp">
+                    <h3 class="font-semibold text-lg mb-2">Daily Training Made Just for You</h3>
+                    <p class="text-gray-600 text-sm">Wake up to a new workout every day personalized to help you stay
+                        motivated and achieve results faster.</p>
+                </div>
+                <div class="feature-card p-5 border rounded-xl bg-white cursor-pointer hover:border-indigo-500 transition"
+                    data-img="image/catagory.webp">
+                    <h3 class="font-semibold text-lg mb-2">Workouts That Match Your Goals</h3>
+                    <p class="text-gray-600 text-sm">Whether you want to burn fat, gain muscle, or improve flexibility,
+                        explore tailored workout categories for all fitness levels</p>
+                </div>
+                <div class="feature-card p-5 border rounded-xl bg-white cursor-pointer hover:border-indigo-500 transition"
+                    data-img="image/report.webp">
+                    <h3 class="font-semibold text-lg mb-2">Your Daily Fitness Report</h3>
+                    <p class="text-gray-600 text-sm">See your workouts, progress, and streaks in one place track
+                        consistency and push yourself further every day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section id="features" class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl mb-12">Why Choose Fit Chase?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 border rounded-xl shadow-sm">
+                    <h3 class="font-semibold text-lg mb-2">🎯 Personalized for You</h3>
+                    <p class="text-gray-600">Daily workouts tailored to your goals and fitness level.</p>
+                </div>
+                <div class="p-6 border rounded-xl shadow-sm">
+                    <h3 class="font-semibold text-lg mb-2">🏋️ 1300+ Workouts & Categories</h3>
+                    <p class="text-gray-600">Explore fat burn, muscle gain, stretching, and more.</p>
+                </div>
+                <div class="p-6 border rounded-xl shadow-sm">
+                    <h3 class="font-semibold text-lg mb-2">🔥 Stay Motivated, Stay Consistent</h3>
+                    <p class="text-gray-600">Track progress, build streaks, and stay on track.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-[#13101C] text-white py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Thousands of users talk about us</h2>
+            </div>
+
+            <!-- Testimonial Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+
+                <!-- Card 1 -->
+                <div
+                    class="bg-[#1c1a27] p-6 rounded-2xl shadow-md transform transition duration-300 hover:scale-105 w-full sm:w-80">
+                    <div class="flex items-center mb-3 space-x-3">
+                        <img src="image/review1.jpeg" alt="User" class="w-10 h-10 rounded-full">
+                        <h3 class="font-semibold">Lucas.palmer</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm">"Honestly didn’t expect much, but this app surprised me. The
+                        workouts are simple to follow and I actually look forward to them now"</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-[#1c1a27] p-6 rounded-2xl shadow-md transform transition duration-300 hover:scale-105 w-full sm:w-80">
+                    <div class="flex items-center mb-3 space-x-3">
+                        <img src="image/used-by-1.png" alt="User" class="w-10 h-10 rounded-full">
+                        <h3 class="font-semibold">Ordinary Tony</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm">"Lots of variety in workouts. I mostly use it at home and it works
+                        well"</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-[#1c1a27] p-6 rounded-2xl shadow-md transform transition duration-300 hover:scale-105 w-full sm:w-80">
+                    <div class="flex items-center mb-3 space-x-3">
+                        <img src="image/review2.jpg" alt="User" class="w-10 h-10 rounded-full">
+                        <h3 class="font-semibold">Noah...</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm">"I usually hate fitness apps, but this one feels different. Clear
+                        instructions, not too complicated, and it actually pushes me"</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="bg-[#1c1a27] p-6 rounded-2xl shadow-md transform transition duration-300 hover:scale-105 w-full sm:w-80">
+                    <div class="flex items-center mb-3 space-x-3">
+                        <img src="image/review4.jpg" alt="User" class="w-10 h-10 rounded-full">
+                        <h3 class="font-semibold">Daniel Carter</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm">"Good for gym. Some workouts are tough but effective"</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="bg-[#1c1a27] p-6 rounded-2xl shadow-md transform transition duration-300 hover:scale-105 w-full sm:w-80">
+                    <div class="flex items-center mb-3 space-x-3">
+                        <img src="image/review3.jpeg" alt="User" class="w-10 h-10 rounded-full">
+                        <h3 class="font-semibold">2025Walker</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm">"I use it mostly for home workouts after work. Great variety,
+                        though I wish the rest timer was a little more customizable."</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                    class="bg-[#1c1a27] p-6 rounded-2xl shadow-md transform transition duration-300 hover:scale-105 w-full sm:w-80">
+                    <div class="flex items-center mb-3 space-x-3">
+                        <img src="image/review6.jpg" alt="User" class="w-10 h-10 rounded-full">
+                        <h3 class="font-semibold">Ava Thompson</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm">"Way better than other fitness apps I used."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog
+    <section id="blog" class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Latest from our Blog</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <article onclick="window.location.href='blog-1.html'"
+                    class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition cursor-pointer">
+                    <img src="image/jeremiah.jpg" class="w-full h-40 object-cover" alt="blog">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Healthy Breakfast Ideas</h3>
+                        <p class="text-gray-600 text-sm">Start your day with these nutrient-rich recipes.</p>
+                    </div>
+                </article>
+                <article class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <img src="image/jeremiah.jpg" class="w-full h-40 object-cover" alt="blog">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Top 10 High Protein Foods</h3>
+                        <p class="text-gray-600 text-sm">Boost your muscles with these superfoods.</p>
+                    </div>
+                </article>
+                <article class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <img src="image/jeremiah.jpg" class="w-full h-40 object-cover" alt="blog">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Lose Fat Without Starving</h3>
+                        <p class="text-gray-600 text-sm">Science-backed ways to lose fat while eating well.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="bg-white border-t py-8 text-center text-gray-600 text-sm">
+        <p>&copy; 2025 Fit Chase. All rights reserved.</p>
+        <!-- <div class="mt-4 space-x-4">
+            <a href="#privacy" class="hover:text-indigo-600">Privacy Policy</a>
+            <a href="#terms" class="hover:text-indigo-600">Terms of Service</a>
+        </div> -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+
+</html>
